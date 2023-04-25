@@ -2,7 +2,9 @@
   <div class="content">
     <div class="header">
       <router-link to="/"> Home </router-link>
-      <router-link to="/guide"> Guide </router-link>
+      <router-link to="/myWork"> My work </router-link>
+      <router-link to="/links"> Links </router-link>
+      <router-link to="/more"> More </router-link>
     </div>
     <router-view v-slot="{ Component, route }">
       <transition
@@ -24,6 +26,7 @@
     display: block;
     width: 100%;
     margin: 0 auto;
+    margin-top: 30px;
   }
 
   a {
@@ -45,5 +48,4 @@
     text-align: start;
   }
 
-  
 </style>
