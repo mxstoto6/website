@@ -88,4 +88,18 @@
     margin-top: 4px;
   }
 
+  @media (max-width: 730px) {
+    .header p {
+      display: none;
+    }
+    .header a {
+      width: 3em;
+      padding-right: 0px;
+      margin-right: 5%;
+    }
+    .header img {
+      margin-right: 0px;
+    }
+  }
+
 </style>
