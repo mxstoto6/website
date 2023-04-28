@@ -9,35 +9,19 @@ const router = createRouter({
     routes: [
         {
             path: '/',
-            component: Home,
-            meta: {
-                enterClass: "animate__animated animate__fadeInLeft",
-                leaveClass: "animate__animated animate__fadeOutRight",
-            },
+            component: Home
         },
         {
             path: '/MyWork',
-            component: MyWork,
-            meta: {
-                enterClass: "animate__animated animate__fadeInRight",
-                leaveClass: "animate__animated animate__fadeOutLeft",
-            },
+            component: MyWork
         },
         {
             path: '/links',
-            component: Links,
-            meta: {
-                enterClass: "animate__animated animate__fadeInRight",
-                leaveClass: "animate__animated animate__fadeOutLeft",
-            },
+            component: Links
         },
         {
             path: '/more',
-            component: More,
-            meta: {
-                enterClass: "animate__animated animate__fadeInRight",
-                leaveClass: "animate__animated animate__fadeOutLeft",
-            },
+            component: More
         },
     ]
 })

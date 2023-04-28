@@ -23,10 +23,11 @@
       </router-link>
 
     </div>
-    <router-view v-slot="{ Component, route }">
+    <router-view v-slot="{ Component }">
       <transition
-      :enter-active-class="route.meta.enterClass"
-      :leave-active-class="route.meta.leaveClass">
+        enter-active-class="animate__animated animate__fadeIn animate__faster"
+        leave-active-class="animate__animated animate__fadeOut animate__faster"
+        mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
@@ -57,15 +58,15 @@
     display: flex;
     width: 7em;
     transition: .2s ease-in-out;
-    border-bottom: 3.5px solid #393053;
-    border-radius: 3px;
+    border-bottom: 4px solid #393053;
+    border-radius: 4px;
     padding-bottom: 5px;
     -webkit-tap-highlight-color: transparent;
     
   }
 
   a:hover, a.router-link-active {
-    border-bottom: 3.5px solid #635985;
+    border-bottom: 4px solid #635985;
   }
 
   .header {
